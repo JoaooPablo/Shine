@@ -1,6 +1,8 @@
 /* Variables de color */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 :root {
-    --background: hsl(210, 100%, 97%);
+    --background: hsl(305.61deg 35.49% 84.36% / 54%);
     --foreground: hsl(339, 20%, 20%);
     --primary: hsl(308, 56%, 85%);
     --primary-foreground: hsl(210, 22%, 22%);
@@ -33,14 +35,23 @@ a {
 
 /* Header */
 header {
-    background-color: var(--primary);
+    background-color: hsl(282.35deg 30.36% 78.04%);
     color: var(--primary-foreground);
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 800; /* Negrita */
+    letter-spacing: 0.05em;
+    color: #2c3e50; /* Un color elegante */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.6;
+    margin: 0;
+    padding: 20px 0;
 }
 
 header nav {
@@ -133,3 +144,20 @@ text-align: center;  /* Centra el título horizontalmente */
 .card-button:hover {
     background-color: #c85353;
 }
+nav a {
+    font-family: 'Raleway', sans-serif; /* Fuente Raleway */
+    font-weight: 300; /* Grosor delgado */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño del texto */
+    color: black; /* Color negro */
+    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    transition: color 0.3s ease; /* Transición suave al pasar el cursor */
+  }
+  h1 {
+    font-family: 'Playfair Display', serif; /* Fuente Playfair Display */
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: 400; /* Grosor normal */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: black; /* Color negro */
+  }

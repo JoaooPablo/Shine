@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 /* Variables de color */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 :root {
-    --background: hsl(210, 100%, 97%);
+    --background: hsl(305.61deg 35.49% 84.36% / 54%);;
     --foreground: hsl(339, 20%, 20%);
     --primary: hsl(308, 56%, 85%);
     --primary-foreground: hsl(210, 22%, 22%);
@@ -11,6 +13,8 @@
     --border: hsl(210, 40%, 80%);
     --radius: 1rem;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
   
   /* Configuración básica */
   * {
@@ -33,15 +37,24 @@
   
   /* Header */
   header {
-    background-color: var(--primary);
+    background-color: hsl(282.35deg 30.36% 78.04%);
     color: var(--primary-foreground);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
   }
   
   header h1 {
-    font-size: 2rem;
-  }
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 800; /* Negrita */
+    letter-spacing: 0.05em;
+    color: #2c3e50; /* Un color elegante */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.6;
+    margin: 0;
+    padding: 20px 0;
+}
   
   header nav {
     margin-top: 10px;
@@ -49,7 +62,7 @@
   
   header nav a {
     color: var(--primary-foreground);
-    margin: 0 15px;
+    margin: 0 17px;
     font-size: 1rem;
     transition: color 0.3s ease;
   }
@@ -77,13 +90,31 @@
   }
   
   .hero h2 {
-    font-size: 2.7rem;
     margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    font-style: italic; /* Estilo cursiva */
+    font-weight: 400; /* Peso normal */
+    letter-spacing: 0.05em;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    padding: 10px 0;
   }
   
   .hero p {
-    font-size: 1.4rem;
     margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-style: italic; /* Estilo cursiva */
+    font-weight: 250; /* Peso normal */
+    letter-spacing: 0.05em;
+    color: #333;
+    text-align: center;
+    line-height: 1.0;
+    margin: 0;
+    padding: 10px 0;
   }
   
   .buttons {
@@ -139,4 +170,24 @@
     border-radius: 12px; /* Borde redondeado */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
   }
-  
+  .logo {
+    display: block;
+    margin: 0 auto 5px; /* Centra el logo y añade espacio inferior */
+    max-width: 250px; /* Ajusta el tamaño del logo */
+    height: auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: -20px; /* Espacio entre el header y el logo */
+  }
+
+    /* Estilo para los enlaces del menú */
+    nav a {
+      font-family: 'Raleway', sans-serif; /* Fuente Raleway */
+      font-weight: 300; /* Grosor delgado */
+      text-decoration: none; /* Sin subrayado */
+      font-size: 18px; /* Tamaño del texto */
+      color: black; /* Color negro */
+      margin: 0 10px; /* Espaciado horizontal entre enlaces */
+      transition: color 0.3s ease; /* Transición suave al pasar el cursor */
+    }
