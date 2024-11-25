@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 80;
+const PORT = 3000;
 
 // Middleware para servir archivos estáticos (CSS, imágenes, JS, etc.)
 app.use(express.static('public'));
@@ -37,5 +37,5 @@ app.get('/Bolsos', (req, res) => {
 });
 // Iniciar el servidor en el puerto 3000
 app.listen(PORT, () => {
-    console.log(`Servidor escuchando en http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
